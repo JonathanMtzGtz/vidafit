@@ -1,0 +1,39 @@
+
+
+<ion-content [fullscreen]="true">
+  <div class="registro-bg">
+    <img src="assets/img/registro.png" alt="" class="registro-bg">
+  </div>
+  <div class="container">
+  <div class="logo">
+    <div class="logo"><img src="assets/img/logo.png" alt="" width="40px"></div>
+    <h1>VIDAFIT</h1>
+  </div>
+
+  
+    <!-- Aquí iría el formulario de login -->
+    <form (ngSubmit)="login()">
+      <ion-item>
+        <ion-label position="floating">Email</ion-label>
+        <ion-input type="email" [(ngModel)]="email" name="email" required></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Password</ion-label>
+        <ion-input type="password" [(ngModel)]="password" name="password" required></ion-input>
+      </ion-item>
+      <ion-button expand="block" (click)="login()">Iniciar Sesión</ion-button>
+    </form>
+
+    
+
+    <!-- Enlace a la página de registro -->
+    <p class="register-link">
+      ¿No tienes una cuenta? <a (click)="goToRegister()">Regístrate aquí</a>
+    </p>
+
+    <!-- Opcional: Enlace para recuperar contraseña -->
+    <p class="forgot-password-link">
+      <a (click)="goToForgotPassword()">¿Olvidaste tu contraseña?</a>
+    </p>
+  </div>
+</ion-content>

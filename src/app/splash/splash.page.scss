@@ -1,0 +1,122 @@
+
+@use 'swiper/css';
+@use 'swiper/css/pagination';
+
+
+:host {
+  ion-content {
+    --background: #f4f5f8;
+  }
+.swiper-container{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-color: #222222; 
+  }
+
+  .slide-content {
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+.slide-title{
+  position: absolute;
+  top: 30%;
+  left: 0;
+  right: 0;
+  text-align: left;
+  color: #ffffff;
+  padding: 20px;
+  z-index: 1;
+ 
+
+}
+.logo{
+  z-index: 99;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+.slide-title, h1{
+  font-size: 33px !important;
+  text-align: left;
+}
+  .slide-content-text {
+    position: absolute;
+    bottom: 15%;
+    left: 0;
+    right: 0;
+    text-align: left;
+    color: #ffffff;
+    padding: 20px;
+    z-index: 1;
+   
+
+    h1 {
+      font-size: 34px !important;
+      font-weight: bold !important;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 16px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      .arrow-right {
+        display: inline-flex;
+        align-items: center;
+        
+        svg {
+          width: 20px;
+          height: 20px;
+          margin-left: 8px;
+        }
+      }
+    }
+  }
+
+  ion-button {
+    position: absolute;
+    bottom: -25%;
+    left: 25%;
+    right: 25%;
+    --background: #EB2930;
+    z-index: 1;
+    color: #ffffff;
+
+  }
+}
+
+:host ::ng-deep .swiper-pagination-bullet-active {
+  background: #EB2930 !important;
+}
+:host ::ng-deep .swiper-pagination-bullet{
+  background-color: #ffffff;
+}

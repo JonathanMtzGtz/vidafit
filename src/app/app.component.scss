@@ -1,0 +1,13 @@
+body {
+    font-family: 'Lexend', sans-serif;
+  }
+  h1, h2, h3 {
+    font-family: 'Lexend', sans-serif;
+  }
+  p {
+    font-family: 'Lexend', sans-serif;
+  }
+  .no-padding {
+    --padding-top: 0;
+    --padding-bottom: 0;
+  }

@@ -1,0 +1,19 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+    Home
+    </ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="goToUserPage()">
+        <img *ngIf="userData?.photoURL" [src]="userData.photoURL" alt="Foto de perfil" class="user-img">
+        <ion-icon *ngIf="!userData?.photoURL" name="person-circle-outline" class="user-icon"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+
+
+</ion-content>

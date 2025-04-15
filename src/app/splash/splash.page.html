@@ -1,0 +1,65 @@
+<ion-header [translucent]="true">
+</ion-header>
+
+<ion-content [fullscreen]="true" class="no-padding">
+ 
+  <div class="swiper-container" >
+    <div class="logo" ><img src="assets/img/logo.png" alt="" width="60px"></div>
+    <swiper [config]="config" (swiper)="onSwiper($event)">
+
+     
+
+      <ng-template swiperSlide>
+        <div class="slide-content">
+          <img src="assets/img/splash1.png" alt="">
+          <div class="slide-title">
+            <h1>¡Transforma tu cuerpo, transforma tu vida!</h1>
+          </div>
+          <div class="slide-content-text">
+            
+            <p>Tu guía completa de entrenamiento en casa, gimnasio y más.
+              <span class="arrow-right">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                  <path fill="#ffffff" d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/>
+                </svg>
+              </span>
+            </p>
+          </div>
+        </div>
+      </ng-template>
+      <ng-template swiperSlide>
+        <div class="slide-content">
+          <img src="assets/img/receta.png" alt="">
+          <div class="slide-title">
+            <h1>Recetas nutricionales</h1>
+          </div>
+          <div class="slide-content-text">
+            
+            <p>Encuentra las mejores recetas para llevar una vida saludable</p>
+           
+          </div>
+          
+        </div>
+      </ng-template>
+      
+      <ng-template swiperSlide>
+        <div class="slide-content">
+          <img src="assets/img/splash2.png" alt="">
+          <div class="slide-title">
+            <h1>Comienza tus objetivos con Vida Fit</h1>
+          </div>
+          <div class="slide-content-text">
+            
+            <p>Entrena desde casa, en el gimnasio, o con ayuda de nuestro entrenador virtual.</p>
+            <ion-button expand="block" (click)="start()">
+              Comenzar
+            </ion-button>
+          </div>
+          
+        </div>
+      </ng-template>
+    </swiper>
+  </div>
+</ion-content>
+
+

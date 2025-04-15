@@ -1,0 +1,101 @@
+// Fondo de pantalla completo
+.registro-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; // Se envía al fondo
+  
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  
+  // Contenedor del formulario
+  .container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 400px;
+   
+    padding: 20px;
+    border-radius: 15px;
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 2;
+  
+    .logo {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 20px;
+  
+      img {
+        width: 50px;
+      }
+  
+      h1 {
+        color: white;
+        font-weight: bold;
+        margin-top: 10px;
+      }
+    }
+    ion-item {
+        --background: rgba(255, 255, 255, 0.8); // Más transparencia
+        --border-radius: 10px !important;
+        margin-bottom: 10px;
+        
+      }
+  
+  
+  
+    .separator {
+      color: white;
+      margin: 20px 0;
+    }
+  
+    .google-button {
+      --background: white !important;  // Fondo blanco
+      --color: black !important;       // Texto negro
+      --border-radius: 40px !important; // Bordes redondeados
+                   // Texto más fuerte
+     text-transform: none;
+     
+    // Forzar bordes redondeados
+    &::part(native) {
+      border-radius: 20px !important;
+    }
+    .google-icon {
+      width: 24px;
+      height: 24px;
+      margin-right: 10px; // Espacio entre icono y texto
+    }
+    
+    }
+    
+  }
+  
+  ion-label{
+    --ion-color: black; /* Or any other color */
+  }
+  
+  .native-input.sc-ion-input-md {
+    color: black !important;
+  }
+  .container form ion-input {
+    --ion-color: black; /* Or any other color */
+  }
+  .register-link{
+    color: white;
+  }
+  ion-button{
+    color: white;
+    text-transform: none;
+  }
